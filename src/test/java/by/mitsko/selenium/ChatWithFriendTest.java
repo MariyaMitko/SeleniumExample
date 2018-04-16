@@ -25,7 +25,7 @@ public class ChatWithFriendTest {
 			chatWithFriend();
 		}
 		Assert.assertTrue(countReplays == 3);
-	}
+	 }
 
 	private void writeLetter(String email) {
 		WebElement wtiteLetter = driver.findElement(By.xpath("//*[@id='b-toolbar__left\']//span"));
@@ -85,7 +85,7 @@ public class ChatWithFriendTest {
 				.findElement(By.xpath("//*[@id='b-letters']/div/div[2]/div/div[2]/div[1]/div/a/div[4]/div[3]/div[2]"));
 
 		if (letterArrivedTime.getText().equals(currentTime)
-				&& senderEmail.getText().equals("Àðòåì Êàïòóð")) {
+				&& senderEmail.getText().equals("Ã€Ã°Ã²Ã¥Ã¬ ÃŠÃ Ã¯Ã²Ã³Ã°")) {
 			countReplays++;
 			return true;
 		}
